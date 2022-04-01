@@ -1,0 +1,96 @@
+:root{
+    --overley : rgba(255,255,255,.5)
+}
+
+body{
+    background-color: #f0f2f5;
+}
+.profile-image img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+.post-button{
+    width: 90%;
+}
+.post-button button{
+    text-align: left;
+    padding: 8PX 20PX;
+    border: none;
+    width: 100%;
+    border-radius: 50px;
+    color: rgb(28, 30, 33);
+}
+.username-area{
+    flex-grow: 1;
+    margin-left: 8px;
+}
+.username-area .user-name{
+    font-size: 12px;
+    font-weight: 500;
+}
+.username-area .user-control{
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+}
+.post-status-icon::before{
+    content: '';
+    height: 2px;
+    width: 2px;
+    margin: 0px 3px;
+    display: inline-table;align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50px;
+}
+.post-status-icon{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+.post-control-menu button{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+.post-body-image-video{
+    width: 100%;
+    /* overflow: hidden; */
+}
+.post-body-image-video img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+.post-control-menu{
+    position: relative;
+}
+.control-menu{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    width: 250px;
+    transition: .4s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+/* Active */
+.control-menu.active{
+    transform: scaleY(1);
+}
+.control-menu ul{
+    list-style: none;
+    width: 100%;
+    padding-left: 0;
+}
+.control-menu ul li{
+    display: block;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.control-menu ul li:hover{
+    background-color: #ddd;
+}

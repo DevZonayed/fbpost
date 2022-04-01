@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Post System</title>
+<script defer src="bundle.js"></script></head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mx-auto my-2">
+
+                <div class="user-post-area">
+                    <div class="card">
+                        <div class="card-body d-flex justify-content-between bg-white shadow-sm">
+                            <div class="profile-image">
+                                <img src="https://wallpaperaccess.com/full/2213448.jpg" alt="">
+                            </div>
+                            <div class="post-button">
+                                <button class="make_post">What's on your mind Zonayed?</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-ground">
+
+                    <div class="card my-2 rounded">
+                        <div class="card-body bg-white shadow-sm">
+                            <div class="post-meta d-flex justify-content-between">
+                                <div class="profile-image">
+                                    <img src="https://wallpaperaccess.com/full/2213448.jpg" alt="">
+                                </div>
+                                <div class="username-area text-start">
+                                    <div class="user-name">
+                                        Zonayed Ahamad
+                                    </div>
+                                    <div class="user-control">
+                                        4h. <span class="post-status-icon"><i class='bx bx-world'></i></span>
+                                    </div>
+                                </div>
+                                <div class="post-control-menu">
+                                    <button class="post-control-button">...</button>
+                                    <div class="control-menu shadow">
+                                        <ul>
+                                            <li>Edit Post</li>
+                                            <li>Delete Post</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <p class="post-body-text">সেই শুরুর দিকটায় যখন Jillur এর ভিশন নিয়ে জানতাম না। বন্ধুকে মাঝে মাঝে বলতাম, কি রে এত ঢং করে ভিডিওগুলোতে কথা বলিস কেন। ইউটিউবে কত ভিডিও আছে, তোর টা আর এমন কি! 
+                                    আসলে তখনও বুঝি নাই, বন্ধুর একমাত্র ভিশনই ছিলো যে, সে যা জানে সেগুলোই একটু মজার ছলে শেখানো। তখন বন্ধুও ভাবেনি যে একদিন এত সাড়া পাবে। শুধু নিজের প্রবল ইচ্ছা থেকে ধারাবাহিকভাবে ও চেষ্টা করে গেছে।
+                                    আজ SoroBindu স্বরবিন্দু প্রায় ৩ লক্ষ শিক্ষার্থীদের একটি পরিবার। যাদেরকে সেবা দিচ্ছে ৩৭ জনের অসাধারণ দক্ষ ও আন্তরিক একটি দল। আর বিগত এক বছর থেকে এই দলটাকে সামলানোর দায়িত্ব আমার কাঁধে। Jillur এর জীবনে আমার মত বন্ধুর অভাব নাই। তবে সবার মধ্য থেকে বন্ধু শুধু আমার উপর ভরসা করেছে, এর জন্য আমি ধন্য ও কৃতজ্ঞ। 
+                                    যেতে হবে বহুদূর। আর এই যাত্রাপথে আমাদের উৎসাহ, উদাহরণ... শুধু আমরাই!!!</p>
+                                <div class="post-body-image-video">
+                                    <img src="https://wallpapers.com/images/high/sad-leaf-in-rain-qcq8so8advawrtx4.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!-- Popup will inject here -->
+<div id="popup">
+    <div class="pop-content shadow">
+        <div class="close"><i class='bx bx-x-circle'></i></div>
+        <div class="post-field p-4">
+            <form id="post_form">
+                <div class="name">
+                    <label for="uname">Your Name</label>
+                    <input id="uname" type="text" name="Uname" placeholder="input your name" class="form-control">
+                </div>
+                <div class="post-body">
+                    <label for="post-content">Write your post</label>
+                    <textarea name="post_body" id="post-content" cols="20" class="form-control" rows="10"></textarea>
+                </div>
+                <div class="poet-image">
+                    <label for="image">Image Link</label>
+                    <input id="image" class="form-control" placeholder="Input your image link" type="text">
+                </div>
+                <div class="send">
+                    <input class="btn mt-2 btn-info w-100" value="Post" type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+#popup{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--overley);
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s;
+}
+#popup.active{
+    opacity: 1;
+    visibility: visible;
+}
+.pop-content{
+    width: 500px;
+    background-color: #fff;
+    border-radius: 7px;
+    position: relative;
+    transform: scale(0);
+    transition: .4s;
+}
+#popup.active .pop-content{
+    transform: scale(1);
+}
+.pop-content .close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .4s;
+    opacity: 0;
+    visibility: hidden;
+}
+.pop-content:hover .close{
+    visibility: visible;
+    opacity: 1;
+}
+.pop-content .close:hover{
+    color: crimson;
+}
+.close *{
+    pointer-events: none;
+}
